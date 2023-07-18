@@ -275,21 +275,28 @@ a:visited {
     list-style: none;
 }
 #anchor li{
-    width: 240px;
+    width: 238px;
     height: 50px;
     float: left;
-    background-color: #000000;
+    border: 1px solid #000000;
+    border-right: 0;
+}
+#anchor li:last-child{
+    border-right: 1px solid #000000;
 }
 #anchor ul li a{
     display: block;
     text-align: center;
     line-height: 50px;
     font-size: 1.2em;
-    color: #ffffff;
+    color: #000000;
+    transition: all 0.4s;
+    font-weight: bold;
 }
 #anchor ul li a:hover{
-    color: #000000;
-    background-color: #ffffff;
+    color: #ffffff;
+    background-color: #000000;
+    transition: all 0.4s;
 }
 
 .line{
